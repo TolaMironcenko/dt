@@ -60,23 +60,29 @@ func getInfo() {
             if (transactions.count == 0) {
                 print("\nNo transactions.\n")
             } else {
-                print("\n")
                 for transaction in transactions {
-                    print("Transaction: " + transaction)
+                    print(" Transaction: " + transaction)
                 }
+                print("\n")
             }
         }
     } else {
         let transactions = readFromFile(fileName: getDataDirectory() + "data/" + CommandLine.arguments[2] + "/transactions").split(separator: "\n")
+        
+        let balance: String = readFromFile(fileName: getDataDirectory() + "data/" + CommandLine.arguments[2] + "/balance")
 
-        print(CommandLine.arguments[2] + " balance: " + readFromFile(fileName: getDataDirectory() + "data/" + CommandLine.arguments[2] + "/balance"))
-
-        if (transactions.count == 0) {
-            print("\nNo transactions.\n")
-        } else {
-            for transaction in transactions {
-                print("Transaction: " + transaction)
+        if (balance != "") {
+            print(CommandLine.arguments[2] + " balance: " + balance)
+            
+            if (transactions.count == 0) {
+                print("\nNo transactions.\n")
+            } else {
+                for transaction in transactions {
+                    print("Transaction: " + transaction)
+                }
             }
+        } else {
+            print("Can`t find this chet. Maybe you don`t have this chet.")
         }
     }
 }

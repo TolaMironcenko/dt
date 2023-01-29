@@ -8,6 +8,9 @@
 import Foundation
 
 func main() {
+    
+    // create data directory if not exist
+    createDataDirectory()
 
     // get help how to use
     if (CommandLine.argc < 2 || CommandLine.arguments[1] == "-h" || CommandLine.arguments[1] == "-help") {
