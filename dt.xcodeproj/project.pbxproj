@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ACD8BFFA2987C816009C5936 /* help.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8BFF92987C816009C5936 /* help.swift */; };
 		ACEB82F32986D40100B69CA2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB82F22986D40100B69CA2 /* main.swift */; };
 		ACEB83002986D73500B69CA2 /* files.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB82FF2986D73500B69CA2 /* files.swift */; };
 		ACEB83062986D7DF00B69CA2 /* chets.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB83052986D7DF00B69CA2 /* chets.swift */; };
@@ -26,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		ACD8BFF82987C7C0009C5936 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		ACD8BFF92987C816009C5936 /* help.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = help.swift; sourceTree = "<group>"; };
 		ACEB82EF2986D40100B69CA2 /* dt */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = dt; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACEB82F22986D40100B69CA2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		ACEB82FF2986D73500B69CA2 /* files.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = files.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		ACEB82E62986D40100B69CA2 = {
 			isa = PBXGroup;
 			children = (
+				ACD8BFF82987C7C0009C5936 /* README.md */,
 				ACEB82F12986D40100B69CA2 /* dt */,
 				ACEB82F02986D40100B69CA2 /* Products */,
 			);
@@ -67,6 +71,7 @@
 				ACEB82FF2986D73500B69CA2 /* files.swift */,
 				ACEB83052986D7DF00B69CA2 /* chets.swift */,
 				ACEB83072986D80600B69CA2 /* transactions.swift */,
+				ACD8BFF92987C816009C5936 /* help.swift */,
 			);
 			path = dt;
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 			files = (
 				ACEB83062986D7DF00B69CA2 /* chets.swift in Sources */,
 				ACEB82F32986D40100B69CA2 /* main.swift in Sources */,
+				ACD8BFFA2987C816009C5936 /* help.swift in Sources */,
 				ACEB83082986D80600B69CA2 /* transactions.swift in Sources */,
 				ACEB83002986D73500B69CA2 /* files.swift in Sources */,
 			);

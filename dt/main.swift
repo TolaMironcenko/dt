@@ -15,7 +15,7 @@ func main() {
 
     // get help how to use
     if (CommandLine.argc < 2 || CommandLine.arguments[1] == "-h" || CommandLine.arguments[1] == "-help") {
-        print("use " + CommandLine.arguments[0] + " + some")
+        getHelp()
         exit(0)
     }
     
