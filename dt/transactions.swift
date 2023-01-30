@@ -22,3 +22,45 @@ func createTransaction() {
     writeInFile(fileName: getDataDirectory() + "data/" + CommandLine.arguments[3] + "/balance", str: String(format: "%.2f", newBalance))
     print(CommandLine.arguments[3] + " balance: " + String(format: "%.2f", newBalance))
 }
+
+// function for get transactions all chets or one chet
+func getTransactions() {
+    if (CommandLine.argc < 3) {
+        let all_chets: [URL] = getAllChets()
+        
+        for chet: URL in all_chets {
+            var chetarr: [String.SubSequence] = chet.absoluteString.split(separator: "/")
+            chetarr.removeFirst()
+            let transactions = readFromFile(fileName: "/" + chetarr.joined(separator: "/") + "/transactions").split(separator: "\n")
+
+            print(chetarr[chetarr.count - 1] + " transactions: \n")
+
+            if (transactions.count == 0) {
+                print("\nNo transactions.\n")
+            } else {
+                for transaction in transactions {
+                    print(" Transaction: " + transaction)
+                }
+                print("\n")
+            }
+        }
+    } else {
+        let transactions = readFromFile(fileName: getDataDirectory() + "data/" + CommandLine.arguments[2] + "/transactions").split(separator: "\n")
+        
+        let balance: String = readFromFile(fileName: getDataDirectory() + "data/" + CommandLine.arguments[2] + "/balance")
+
+        if (balance != "") {
+            print(CommandLine.arguments[2] + " transactions: \n")
+            
+            if (transactions.count == 0) {
+                print("\nNo transactions.\n")
+            } else {
+                for transaction in transactions {
+                    print("\tTransaction: " + transaction)
+                }
+            }
+        } else {
+            print("Can`t find this chet. Maybe you don`t have this chet.")
+        }
+    }
+}

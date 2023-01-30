@@ -7,6 +7,7 @@
 
 import Foundation
 
+// MARK: - Main function
 func main() {
     
     // create data directory if not exist
@@ -53,6 +54,11 @@ func main() {
     // get sum all chets or one chet
     if (CommandLine.arguments[1] == "-s" || CommandLine.arguments[1] == "-sum") {
         getSum()
+    }
+    
+    // get transactions all chets or one chet
+    if (CommandLine.arguments[1] == "-t" || CommandLine.arguments[1] == "-transactions") {
+        getTransactions()
     }
 
 }
