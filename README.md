@@ -1,7 +1,7 @@
 #  DT - CONTROL YOU DUTYS AND ALL FINANCES
 
 ## Use one of this commands:
-    ```bash
+    ```
         -h - get this help message
         -i - get information about all chets
         -i (chet name) - get information about one of chets
