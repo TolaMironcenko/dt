@@ -1,7 +1,6 @@
 #  DT - CONTROL YOU DUTYS AND ALL FINANCES
 
 ## Use one of this commands:
-    ```
         -h - get this help message
         -i - get information about all chets
         -i (chet name) - get information about one of chets
@@ -12,4 +11,3 @@
         -n (chet name) - create anew chet
         -d (chet name) - delete one of chet
         -a (sum) (chet name) - add transaction for one of chets
-    ```
