@@ -60,8 +60,10 @@ func getInfo() {
             if (transactions.count == 0) {
                 print("\nNo transactions.\n")
             } else {
+                print("|\tsum\t|\tdate time\t|\tcategory\t|")
+                print("|\t---\t|\t---------\t|\t--------\t|")
                 for transaction in transactions {
-                    print(" Transaction: " + transaction)
+                    print("|\t" + transaction + "\t\t|")
                 }
                 print("\n")
             }
@@ -77,8 +79,10 @@ func getInfo() {
             if (transactions.count == 0) {
                 print("\nNo transactions.\n")
             } else {
+                print("|\tsum\t|\tdate time\t|\tcategory\t|")
+                print("|\t---\t|\t---------\t|\t--------\t|")
                 for transaction in transactions {
-                    print("Transaction: " + transaction)
+                    print("|\t" + transaction + "\t\t|")
                 }
             }
         } else {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC2809E42988AB500025E56F /* datetime.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2809E32988AB500025E56F /* datetime.swift */; };
 		ACD8BFFA2987C816009C5936 /* help.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8BFF92987C816009C5936 /* help.swift */; };
 		ACEB82F32986D40100B69CA2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB82F22986D40100B69CA2 /* main.swift */; };
 		ACEB83002986D73500B69CA2 /* files.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB82FF2986D73500B69CA2 /* files.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AC2809E32988AB500025E56F /* datetime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = datetime.swift; sourceTree = "<group>"; };
 		ACD8BFF82987C7C0009C5936 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		ACD8BFF92987C816009C5936 /* help.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = help.swift; sourceTree = "<group>"; };
 		ACEB82EF2986D40100B69CA2 /* dt */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = dt; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +74,7 @@
 				ACEB83052986D7DF00B69CA2 /* chets.swift */,
 				ACEB83072986D80600B69CA2 /* transactions.swift */,
 				ACD8BFF92987C816009C5936 /* help.swift */,
+				AC2809E32988AB500025E56F /* datetime.swift */,
 			);
 			path = dt;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			files = (
 				ACEB83062986D7DF00B69CA2 /* chets.swift in Sources */,
 				ACEB82F32986D40100B69CA2 /* main.swift in Sources */,
+				AC2809E42988AB500025E56F /* datetime.swift in Sources */,
 				ACD8BFFA2987C816009C5936 /* help.swift in Sources */,
 				ACEB83082986D80600B69CA2 /* transactions.swift in Sources */,
 				ACEB83002986D73500B69CA2 /* files.swift in Sources */,
@@ -266,6 +270,7 @@
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = K3AS449A74;
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -278,6 +283,7 @@
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = K3AS449A74;
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
